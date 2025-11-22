@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doce Encanto - Confeitaria Artesanal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">Doce Encanto 🍭</div>
+            <ul class="menu">
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#produtos">Doces</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="inicio" class="hero">
+        <div class="hero-text">
+            <h1>Adoce seu dia com carinho</h1>
+            <p>Os melhores brigadeiros gourmet e bolos artesanais da cidade.</p>
+            <a href="#produtos" class="btn-cta">Quero provar</a>
+        </div>
+        <img src="bolo-hero.jpg" alt="Bolo de chocolate com morangos suculentos" class="hero-img">
+    </section>
+
+    <section id="produtos" class="vitrine">
+        <h2>Nossos Favoritos</h2>
+        <div class="grid-produtos">
+            <article class="card">
+                <img src="brigadeiro.jpg" alt="Brigadeiro belga">
+                <h3>Brigadeiro Belga</h3>
+                <p class="preco">R$ 5,00</p>
+                <button>Adicionar</button>
+            </article>
+            <article class="card">
+                <img src="brigadeiro.jpg" alt="Brigadeiro belga">
+                <h3>Brigadeiro Belga</h3>
+                <p class="preco">R$ 5,00</p>
+                <button>Adicionar</button>
+            </article>
+            <article class="card">
+                <img src="brigadeiro.jpg" alt="Brigadeiro belga">
+                <h3>Brigadeiro Belga</h3>
+                <p class="preco">R$ 5,00</p>
+                <button>Adicionar</button>
+            </article>
+            </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Doce Encanto. Feito com amor.</p>
+    </footer>
+    
+    <script>
+    // Seleciona todos os botões dentro dos cards
+    const botoesCompra = document.querySelectorAll('.card button');
+
+    // Para cada botão, adicionamos um "ouvinte" de clique
+    botoesCompra.forEach(botao => {
+        botao.addEventListener('click', () => {
+            alert("Que ótima escolha! 🍬 Produto adicionado ao carrinho imaginário.");
+        });
+    });
+</script>
+</body>
+</html>
